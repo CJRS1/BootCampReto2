@@ -1,7 +1,10 @@
-body
-header
-header-nav
-main
-footer
+@import './body.css';
+@import './variables.css';
+@import './index.css';
+@import './footer.css';
+@import './header.css';
 
-/*font-family: 'Zilla Slab', serif;*/
+.body{
+    background-color: var(--primary-theme-color);
+    font-family: var(--primary-font-family);
+}

@@ -1,0 +1,7 @@
+:root{
+    --primary-theme-color: #20232a;
+    --secondary-theme-color:#282c34;
+    --primary-font-family: 'Zilla Slab', serif;
+    --padding-section: 2rem 0;
+    --padding-container: 0 1rem;
+}
