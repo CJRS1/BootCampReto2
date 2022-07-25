@@ -1,9 +1,13 @@
 :root {
+    scroll-behavior: smooth;
     --primary-theme-color: #20232a;
     --secondary-theme-color: #282c34;
     --primary-text-color: #fff;
+    --tertiary-shadow-color: #000;
     --primary-font-family: 'Zilla Slab', serif;
-    --padding-section: 2rem 0;
+    --max-width-container: 1024px;
     --padding-container: 0 1rem;
+    --padding-section: 2rem 0;
     --primary-all-transition: all 0.25s ease-in-out;
+
 }

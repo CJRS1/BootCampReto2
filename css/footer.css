@@ -1,18 +1,22 @@
 .footer {
-    position: fixed;
-    display: block;
+    position: flex; 
+    align-items: center;
+    justify-content: center;
+    /* display: fixed; */
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #9b9b9b;  
+    background-color: #9b9b9b;
     margin: 0;
 }
+
 .footer__container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
 .footer__link-socialnetwork-list {
     display: flex;
     align-items: center;
@@ -25,41 +29,61 @@
     /* background-color: green;  */
     /* padding: 1rem 1rem 1rem 1rem;  */
 }
+
 .footer__link-socialnetwork-item {
     display: flex;
     /* justify-content: center; */
     /* padding: 0rem 1.5rem 0 0; */
     /* padding: 0 1.5rem 0 1.5rem; */
 }
-.footer__link-socialnetwork{
+
+.footer__link-socialnetwork {
     position: relative;
     display: flex;
     align-items: center;
-    color: aqua;
     font-weight: 600;
+    content: '';
 }
-.footer-name{
+
+
+.footer-name {
     text-decoration: none;
-    color: var(--primary-text-color);   
+    color: var(--primary-text-color);
 }
-.footer-name:hover{
-    transform: scale(1.25);
-    transition: var(--primary-all-transition);
-}
-.footer__link-copyright{
+
+.footer__link-copyright {
+    display: block;
     border: 0;
     /* background-color: brown; */
     /* padding: 0 auto; */
     /*padding arriba derecha abajo izquierda*/
     /* padding: 0 auto; */
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 1rem 1rem 1rem;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
 }
+
+.footer__link-copyright::before{
+    content: '';
+    position: absolute;
+    top: 3.5rem;
+    left: 10%;
+    width: 80%;
+    height: 0.225rem;
+    background-color: #20232a40;
+}
+
 .footer__logo-social-item {
     width: 30px;
     height: 30px;
-    margin: 1rem 0 0 0; 
+    margin: 1rem 0 0 0;
 }
-.footer__logo-social-item:hover{
+
+.footer__logo-social-item:hover {
     transform: scale(1.25);
+    cursor: pointer;
     transition: var(--primary-all-transition);
 }

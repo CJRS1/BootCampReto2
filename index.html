@@ -2,23 +2,23 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reto 2</title>
     <!-- Para ejecutar CSS -->
-    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/index.css" />
     <!-- Para ejecutar JS -->
     <script src="./js/index.js"></script>
     <!-- Icono de GitHub -->
-    <link rel="shortcut icon" href="./assets/img/github.svg" type="image/x-icon"/>
+    <link rel="shortcut icon" href="./assets/img/github.svg" type="image/x-icon" />
     <!-- Link de formato de letra -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet"/>
+        rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,24 +28,29 @@
     <header class="header">
         <nav class="header-nav">
             <div class="header-nav__container">
-                <a href="#" class="header-nav__link-logo-container">
-                    <img src="./assets/img/LogoChristian.png" alt="LogoChristian" class="header-nav__link-logo" width="150px" height="70px"/>
+                <a href="#hero" class="header-nav__link-logo-container">
+                    <img src="./assets/img/LogoChristian.png" alt="LogoChristian" class="header-nav__link-logo"
+                        width="108px" height="32px" />
                 </a>
-                <!-- <div class="header-nav__menu-icon">
-                    <i class="bi bi-card-list"></i>
-                </div> -->
+                <div class="header-nav__menu-icon-container" id="headerNavMenuIconContainer">
+                    <i class="bi bi-list"></i>
+                </div> 
                 <ul class="header-nav__menu-link-list">
                     <li class="heaver-nav__menu-link-item">
-                        <a href="#hero1" class="header-nav_menu-link">Acerca de mi</a>
+                        <a href="#hero" class="header-nav__menu-link">Acerca de mi</a>
                     </li>
                     <li class="heaver-nav__menu-link-item">
-                        <a href="#hero2" class="header-nav_menu-link">Aprende HTML,JS,CSS y React</a>
+                        <a href="#hero1" class="header-nav__menu-link">Aprende HTML,JS,CSS y React</a>
                     </li>
                     <li class="heaver-nav__menu-link-item">
-                        <a href="#hero3" class="header-nav_menu-link">Proyectos</a>
+                        <a href="#hero2" class="header-nav__menu-link">Proyectos</a>
                     </li>
                     <li class="heaver-nav__menu-link-item">
-                        <a href="#hero4" class="header-nav_menu-link">Christian Reyes</a>
+                        <a href="https://www.linkedin.com/in/crso/" 
+                        class="header-nav__menu-link header-nav__menu-link--active" target="_blank" rel="noopener noreferrer">Christian Reyes</a>
+                    </li>
+                    <li class="header-nav__menu-link-item header-nav__menu-item--close-icon" id="headerNavMenuCloseIconContainer">
+                        <i class="bi bi-x-circle"></i>
                     </li>
                 </ul>
             </div>
@@ -53,6 +58,157 @@
     </header>
 
     <main class="main">
+        <article class="hero" id="hero">
+            <div class="hero__container">
+                <section class="hero__info-container">
+                    <h1 class="hero__info-title">Christian Reyes </h1>
+                    <h2 class="hero__info-subtitle">Desarrollador Web</h2>
+                    <p class="hero__info-paragraph">
+                        Hola soy Christian Reyes, soy ingeniero mecatrónico, tengo 26 años y tengo 5 años de experiencia
+                        realizando desarrollo web. Y dos años dictadno clases de desarrollo web desde cero.
+                    </p>
+                    <a href="https://www.linkedin.com/in/crso/" target="_blank" rel="noopener noreferrer"
+                        class="hero__info-link">¡Aprende gratis!</a>
+                </section>
+                <div class="hero__img-container">
+                    <img src="./assets/img/foto.JPG" alt="Christian Reyes" width="256" height="256"
+                        class="hero__img-pro">
+                    <figure class="hero__img-tech-container">
+                        <img src="./assets/img/logo-html-5.svg" alt="HTML" width="64" height="64"
+                            class="hero__img-tech" />
+                        <img src="./assets/img/logo-css-3.svg" alt="CSS" width="64" height="64"
+                            class="hero__img-tech" />
+                        <img src="./assets/img/logo-javascript.svg" alt="JavaScript" width="64" height="64"
+                            class="hero__img-tech" />
+                        <img src="./assets/img/logo-react.svg" alt="React" width="64" height="64"
+                            class="hero__img-tech" />
+                    </figure>
+                </div>
+            </div>
+        </article>
+        <article class="hero1" id="hero1">
+            <div class="hero1__container">
+                <section class="hero1__info-container">
+                    <h1 class="hero1__info-title">HTML</h1>
+                    <p class="hero1__info-paragraph">
+                        Tema 1: ¿Qué es HTML?.
+                    </p>
+                    <p class="hero1__info-paragraph">
+                        Tema 2: Estructura de un documento en HTML.
+                    </p>
+                    <p class="hero1__info-paragraph">
+                        Tema 3: Formato básico de documento.
+                    </p>
+                    <p class="hero1__info-paragraph">
+                        Tema 4: Formato avanzado del documento.
+                    </p>
+                    <p class="hero1__info-paragraph">
+                        Tema 5: Publicar la página en la Web.
+                    </p>
+                    <p class="hero1__info-paragraph1">
+                        Precio: 150 soles
+                    </p>
+                    <a href="https://www.linkedin.com/in/crso/" target="_blank" rel="noopener noreferrer"
+                        class="hero__info-link1">¡Invierte aquí!</a>
+                </section>
+                <section class="hero1__info-container">
+                    <h1 class="hero1__info-title">CSS</h1>
+                    <p class="hero1__info-paragraph">
+                        Tema 1: ¿Qué es CSS?
+                    </p>
+                    <p class="hero1__info-paragraph">
+                        Tema 2: Selectores.
+                    </p>
+                    <p class="hero1__info-paragraph">
+                        Tema 3: Los pilares ded CSS.
+                    </p>
+                    <p class="hero1__info-paragraph">
+                        Tema 4: Box model.
+                    </p>
+                    <p class="hero1__info-paragraph">
+                        Tema 5: Pseudoclases.
+                    </p>
+                    <p class="hero1__info-paragraph1">
+                        Precio: 160 soles
+                    </p>
+                    <a href="https://www.linkedin.com/in/crso/" target="_blank" rel="noopener noreferrer"
+                        class="hero__info-link1">¡Invierte aquí!</a>
+                </section>
+                <section class="hero1__info-container">
+                    <h1 class="hero1__info-title">JS</h1>
+                    <p class="hero1__info-paragraph">
+                        Tema 1: ¿Qué es JS?
+                    </p>
+                    <p class="hero1__info-paragraph">
+                        Tema 2: Bases de JavaScript.
+                    </p>
+                    <p class="hero1__info-paragraph">
+                        Tema 3: Condicionales.
+                    </p>
+                    <p class="hero1__info-paragraph">
+                        Tema 4: Loops.
+                    </p>
+                    <p class="hero1__info-paragraph">
+                        Tema 5: Métodos de arrays.
+                    </p>
+                    <p class="hero1__info-paragraph1">
+                        Precio: 170 soles
+                    </p>
+                    <a href="https://www.linkedin.com/in/crso/" target="_blank" rel="noopener noreferrer"
+                        class="hero__info-link1">¡Invierte aquí!</a>
+                </section>
+                <section class="hero1__info-container">
+                    <h1 class="hero1__info-title">React</h1>
+                    <p class="hero1__info-paragraph">
+                        Tema 1: ¿Qué es React?
+                    </p>
+                    <p class="hero1__info-paragraph">
+                        Tema 2: Maquetación.
+                    </p>
+                    <p class="hero1__info-paragraph">
+                        Tema 3: Interaccion.
+                    </p>
+                    <p class="hero1__info-paragraph">
+                        Tema 4: Escabilidad.
+                    </p>
+                    <p class="hero1__info-paragraph">
+                        Tema 5: Modales y formularios.
+                    </p>
+                    <p class="hero1__info-paragraph1">
+                        Precio: 180 soles
+                    </p>
+                    <a href="https://www.linkedin.com/in/crso/" target="_blank" rel="noopener noreferrer"
+                        class="hero__info-link">¡Invierte aquí!</a>
+                </section>
+            </div>
+            <div class="hero2__info-container">
+                <section class="hero__info-container">
+                    <a href="https://www.linkedin.com/in/crso/" target="_blank" rel="noopener noreferrer"
+                        class="hero__info-link1">¡Adquiérelos todos por 450 soles aquí!</a>
+                </section>
+            </div>
+        </article>
+
+        <article class="hero2" id="hero2">
+            <nav class="hero2__info-container">
+                <div class="hero2__proy-container">
+                    <h1 class="hero1__info-title">Proyecto 1</h1>
+                    <a href="https://cjrs1.github.io/Acrostic/" class="hero2__link-proyecto" target="_blank"
+                    rel="noreferrer noopener">
+                    <img src="./assets/img/PW1.png" alt="Proyecto1"
+                        class="hero2__hero-item" width="400" height="400" />
+                </a>
+                </div>
+                <div class="hero2__proy-container">
+                    <h1 class="hero1__info-title">Proyecto 2</h1>
+                    <a href="https://cjrs1.github.io/RETOBOOTCAMP1/" class="hero2__link-proyecto" target="_blank"
+                        rel="noreferrer noopener">
+                        <img src="./assets/img/PW2.png" alt="Proyecto2"
+                            class="hero2__hero-item" width="400" height="400" />
+                    </a>
+                </div>
+            </nav>
+        </article>
 
     </main>
 
@@ -60,34 +216,44 @@
         <nav class="footer__container">
             <ul class="footer__link-socialnetwork-list">
                 <li class="footer__link-socialnetwork-item">
-                    <a href="https://www.linkedin.com/in/crso/" class="footer__link-socialnetwork" target="_blank" rel="noreferrer noopener">
-                        <img src="https://i.postimg.cc/J7BLFtdc/linkedin.png" alt="Linkedin" class="footer__logo-social-item" width="30px" height="30px"/>
+                    <a href="https://www.linkedin.com/in/crso/" class="footer__link-socialnetwork" target="_blank"
+                        rel="noreferrer noopener">
+                        <img src="https://i.postimg.cc/J7BLFtdc/linkedin.png" alt="Linkedin"
+                            class="footer__logo-social-item" width="30px" height="30px" />
                     </a>
                 </li>
                 <li class="footer__link-socialnetwork-item">
-                    <a href="https://github.com/CJRS1" class="footer__link-socialnetwork" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.postimg.cc/5NBMxTJX/github.png" alt="GitHub" class="footer__logo-social-item" width="30px" height="30px"/>
+                    <a href="https://github.com/CJRS1" class="footer__link-socialnetwork" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://i.postimg.cc/5NBMxTJX/github.png" alt="GitHub"
+                            class="footer__logo-social-item" width="30px" height="30px" />
                     </a>
                 </li>
                 <li class="footer__link-socialnetwork-item">
-                    <a href="https://www.facebook.com/profile.php?id=100015773387284" class="footer__link-socialnetwork" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.postimg.cc/7YHyZXZX/facebook.png" alt="Facebook" class="footer__logo-social-item" width="30px" height="30px"/>
+                    <a href="https://www.facebook.com/profile.php?id=100015773387284" class="footer__link-socialnetwork"
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.postimg.cc/7YHyZXZX/facebook.png" alt="Facebook"
+                            class="footer__logo-social-item" width="30px" height="30px" />
                     </a>
                 </li>
                 <li class="footer__link-socialnetwork-item">
                     <a href="https://www.instagram.com/ctn_rs/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.postimg.cc/sfJtqS4W/instagram.png" alt="Instagram" class="footer__logo-social-item" width="30px" height="30px"/>
+                        <img src="https://i.postimg.cc/sfJtqS4W/instagram.png" alt="Instagram"
+                            class="footer__logo-social-item" width="30px" height="30px" />
                     </a>
                 </li>
                 <li class="footer__link-socialnetwork-item">
-                    <a href="https://www.youtube.com/channel/UC9a4LHl_vzZ5Eh3pkh7DrNA" class="footer__link-socialnetwork" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.postimg.cc/dtPYcvbM/youtube.png" alt="Youtube" class="footer__logo-social-item" width="30px" height="30px"/>
+                    <a href="https://www.youtube.com/channel/UC9a4LHl_vzZ5Eh3pkh7DrNA"
+                        class="footer__link-socialnetwork" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.postimg.cc/dtPYcvbM/youtube.png" alt="Youtube"
+                            class="footer__logo-social-item" width="30px" height="30px" />
                         <!-- <span class="footer__logo-social-item"><i class="bi bi-linkedin" class="footer__link-socialwork-item"></i></span> -->
                     </a>
                 </li>
             </ul>
-            <h5 class="footer__link-copyright">Copyright &copy; 2022 <a href="https://www.linkedin.com/in/crso/" target="_blank"
-                rel="noopener noreferrer" class="footer-name">Christian Reyes</a>. Todos los derechos reservados.</h5>
+            <h5 class="footer__link-copyright">Copyright &copy; 2022 <a href="https://www.linkedin.com/in/crso/"
+                    target="_blank" rel="noopener noreferrer" class="footer-name">Christian Reyes</a>. Todos los
+                derechos reservados.</h5>
         </nav>
     </footer>
 </body>

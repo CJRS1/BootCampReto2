@@ -3,6 +3,20 @@
 @import './index.css';
 @import './footer.css';
 @import './header.css';
+@import './main.css';
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* @media (min-width: 857) {
+    :root{
+        padding: var(--padding-container);
+    }
+    
+} */
 
 .body{
     background-color: var(--primary-theme-color);
