@@ -216,6 +216,7 @@
     }
 
     .hero__info-paragraph {
+        text-align: justify;
         display: flex;
         font-size: 1.25rem;
         margin: 0;
